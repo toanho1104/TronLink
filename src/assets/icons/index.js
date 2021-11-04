@@ -3,4 +3,17 @@ export const icons = {
   market: require('./market.png'),
   discover: require('./discover.png'),
   my: require('./my.png'),
-};
+  add: require('./add.png'),
+  next: require('./next.png'),
+  scan: require('./scan.png'),
+  addOn: require('./addOn.png'),
+  sort: require('./sort.png'),
+  show: require('./show.png'),
+  hide: require('./hide.png'),
+  copy: require('./copy.png'),
+  send: require('./send.png'),
+  receive: require('./receive.png'),
+  swap: require('./swap.png'),
+  freeze: require('./freeze.png'),
+  vote: require('./vote.png'),
+}

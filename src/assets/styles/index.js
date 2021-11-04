@@ -1,30 +1,28 @@
-import { Dimensions } from 'react-native';
+import { Dimensions } from 'react-native'
 
-const { width } = Dimensions.get('window');
-const rate = width / 375;
+const { width } = Dimensions.get('window')
+const rate = width / 375
 
 export const colors = {
-  primaryDark: '#00004F',
-  primary: '#19227C',
-  primaryLight: '#524AAC',
+  darkMode: false,
+  primaryDark: '#0c7bfa',
+  primary: '#509ffa',
+  primaryLight: '#a2c8f5',
 
   secondaryDark: '#C8B900',
   secondary: '#FFEB3B',
   secondaryLight: '#FFFF72',
-
-  textDark: '#000000',
-  textLight: '#757575',
+  textPrimary: '#000000',
+  textSecondary: '#60727d',
   textOnPrimary: '#ffffff',
   textOnSecondary: '#000000',
 
-  iconPrimary: '#60727d',
+  iconPrimary: '#000000',
+  iconSecondary: '#60727d',
 
   backgroundPrimary: '#ffffff',
   backgroundSecondary: '#E5E5E5',
-
-  red: '#c41c00',
-  green: '#11942D',
-};
+}
 
 export const lightColors = {
   darkMode: false,
@@ -44,7 +42,7 @@ export const lightColors = {
 
   backgroundPrimary: '#ffffff',
   backgroundSecondary: '#E5E5E5',
-};
+}
 export const darkColors = {
   darkMode: true,
   primaryDark: '#00004F',
@@ -64,7 +62,7 @@ export const darkColors = {
 
   backgroundPrimary: '#000000',
   backgroundSecondary: '#E5E5E5',
-};
+}
 
 export const fonts = {
   bold: {
@@ -82,7 +80,7 @@ export const fonts = {
   boldItalic: {
     fontFamily: 'Roboto-BoldItalic',
   },
-};
+}
 
 export const textStyles = {
   headingLarge: {
@@ -129,11 +127,11 @@ export const textStyles = {
   },
   contenTextRegular: {
     ...fonts.regular,
-    fontSize: 16,
+    fontSize: 12,
   },
   contenTextItalic: {
     ...fonts.italic,
-    fontSize: 14,
+    fontSize: 12,
   },
   textInput: {
     ...fonts.regular,
@@ -144,7 +142,7 @@ export const textStyles = {
     ...fonts.bold,
     fontSize: 14,
   },
-};
+}
 
 // export const Shadows = {
 //   buttonShadow: {
@@ -188,4 +186,4 @@ export const MessageStyle = {
     titleStyle: textStyles.headingSmall,
     duration: 1000,
   },
-};
+}

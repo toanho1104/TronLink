@@ -3,7 +3,7 @@ import {
   View, Image, Dimensions, SafeAreaView, Text, TouchableOpacity,
 } from 'react-native'
 import { useSelector } from 'react-redux'
-import { colors, fonts } from '../../assets/styles'
+import { colors } from '../../assets/styles'
 // import { TextCom } from '../../components'
 
 import { bottom_tab_data } from '../../configs'
@@ -28,16 +28,8 @@ const BottomTabBarCom = ({ state, descriptors, navigation }) => {
   return (
     <SafeAreaView>
       <View style={{
-        shadowColor: '#000',
-        shadowOffset: {
-          width: 0,
-          height: 0,
-        },
-        shadowOpacity: 1.45,
-        shadowRadius: 4.65,
-
-        elevation: 1,
-        height: 0.5,
+        borderTopWidth: 2,
+        borderTopColor: colors.backgroundSecondary,
       }}
       />
       <View style={{
@@ -88,7 +80,7 @@ const BottomTabBarCom = ({ state, descriptors, navigation }) => {
                   width: 25,
                   height: 25,
                   marginBottom: 4,
-                  tintColor: isFocused ? colors.primary : colors.iconPrimary,
+                  tintColor: isFocused ? colors.primary : colors.iconSecondary,
                 }}
                 resizeMode="contain"
               />
