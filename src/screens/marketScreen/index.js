@@ -5,14 +5,24 @@ import {
 import FastImage from 'react-native-fast-image'
 import Reactotron from 'reactotron-react-native'
 import { useDispatch, useSelector } from 'react-redux'
+import { getStatusBarHeight } from 'react-native-status-bar-height'
+import Header from './components/header'
+import SwapControl from './components/swapControl/index'
+import BackGroundCom from '../../components/backGroundCom'
+import ButtonCom from '../../components/buttonCom'
+import ExchangeRate from './components/exchangeRate'
 
 const { width } = Dimensions.get('window')
 const rate = width / 375
 const MarketScreen = () => {
   return (
-    <View>
-      <Text>MarketScreen</Text>
-    </View>
+    <BackGroundCom style={styles.container}>
+      <View style={{ height: getStatusBarHeight() }} />
+      <Header />
+      <SwapControl />
+      <ExchangeRate />
+      <ButtonCom title="Instant Swap" />
+    </BackGroundCom>
   )
 }
 

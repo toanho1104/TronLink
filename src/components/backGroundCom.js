@@ -5,16 +5,20 @@ import {
 import FastImage from 'react-native-fast-image'
 import Reactotron from 'reactotron-react-native'
 import { useDispatch, useSelector } from 'react-redux'
+import { getStatusBarHeight } from 'react-native-status-bar-height'
 import { colors } from '../assets/styles'
 
 const { width } = Dimensions.get('window')
 const rate = width / 375
 const BackGroundCom = ({ children }) => {
+  console.log(getStatusBarHeight())
   return (
+
     <View style={[styles.container, { backgroundColor: colors.backgroundPrimary }]}>
       <StatusBar
-        backgroundColor={colors.backgroundPrimary}
         barStyle="dark-content"
+        translucent
+        backgroundColor="transparent"
       />
       {children}
     </View>

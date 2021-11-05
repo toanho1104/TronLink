@@ -144,28 +144,38 @@ export const textStyles = {
   },
 }
 
-// export const Shadows = {
-//   buttonShadow: {
-//     shadowColor: colors.primaryRed,
-//     shadowOffset: {
-//       width: 0,
-//       height: 10,
-//     },
-//     shadowOpacity: 0.24,
-//     shadowRadius: 30,
-//     elevation: 8,
-//   },
-//   mainButtonShadow: {
-//     shadowColor: colors.primaryBlue,
-//     shadowOffset: {
-//       width: 0,
-//       height: 10,
-//     },
-//     shadowOpacity: 0.24,
-//     shadowRadius: 30,
-//     elevation: 8,
-//   },
-// }
+export const Shadows = {
+  buttonShadow: {
+    shadowColor: colors.primaryRed,
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 0.24,
+    shadowRadius: 30,
+    elevation: 8,
+  },
+  mainButtonShadow: {
+    shadowColor: colors.primaryBlue,
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 0.24,
+    shadowRadius: 30,
+    elevation: 8,
+  },
+  shadowView: {
+    shadowColor: colors.backgroundSecondary,
+    shadowOffset: {
+      width: 0,
+      height: 0,
+    },
+    shadowOpacity: 0.94,
+    shadowRadius: 20,
+    elevation: 5,
+  },
+}
 
 export const MessageStyle = {
   success: {
