@@ -131,7 +131,7 @@ export const textStyles = {
   },
   contenTextItalic: {
     ...fonts.italic,
-    fontSize: 12,
+    fontSize: 11,
   },
   textInput: {
     ...fonts.regular,

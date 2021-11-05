@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import {
-  View, Dimensions, SafeAreaView, Text, TextInput, StyleSheet, TouchableOpacity, Alert, Image,
+  View, Dimensions, SafeAreaView, Text, TextInput, StyleSheet, TouchableOpacity, Alert, Image, StatusBar,
 } from 'react-native'
 import FastImage from 'react-native-fast-image'
 import Reactotron from 'reactotron-react-native'
@@ -12,6 +12,10 @@ const rate = width / 375
 const BackGroundCom = ({ children }) => {
   return (
     <View style={[styles.container, { backgroundColor: colors.backgroundPrimary }]}>
+      <StatusBar
+        backgroundColor={colors.backgroundPrimary}
+        barStyle="dark-content"
+      />
       {children}
     </View>
   )

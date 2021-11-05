@@ -19,7 +19,7 @@ export default Line
 
 const styles = StyleSheet.create({
   container: {
-    borderWidth: 3 * StyleSheet.hairlineWidth,
+    borderTopWidth: 3 * StyleSheet.hairlineWidth,
     borderColor: colors.backgroundSecondary,
   },
 })

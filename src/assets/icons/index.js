@@ -16,4 +16,5 @@ export const icons = {
   swap: require('./swap.png'),
   freeze: require('./freeze.png'),
   vote: require('./vote.png'),
+  check: require('./check.png'),
 }

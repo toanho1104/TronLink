@@ -5,43 +5,43 @@ import {
 import FastImage from 'react-native-fast-image'
 import Reactotron from 'reactotron-react-native'
 import { useDispatch, useSelector } from 'react-redux'
-import IconCom from '../../../components/iconCom'
-import { icons } from '../../../assets/icons/index'
-import { colors } from '../../../assets/styles/index'
-import TextCom from '../../../components/textCom'
+import IconCom from '../../../../components/iconCom'
+import { icons } from '../../../../assets/icons/index'
+import { TextCom } from '../../../../components'
+import { colors } from '../../../../assets/styles'
 
 const { width } = Dimensions.get('window')
 const rate = width / 375
-const Button = ({ icon, title, tintColor }) => {
+const PreferenButton = () => {
   return (
     <View style={styles.container}>
       <IconCom
-        source={icon}
-        style={[styles.icon]}
-        tintColor={tintColor}
+        source={icons.sort}
+        style={styles.icon}
       />
       <TextCom
-        contenTextItalic
+        textPrimary
       >
-        {title}
+        Preferen
       </TextCom>
     </View>
   )
 }
 
-export default Button
+export default PreferenButton
 
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    backgroundColor: colors.backgroundSecondary,
-    borderRadius: 60,
-    justifyContent: 'center',
-    width: 50 * rate,
-    height: 50 * rate,
+    marginRight: 12 * rate,
+    borderWidth: 1,
+    borderRadius: 10,
+    paddingHorizontal: 5,
+    flexDirection: 'row',
+    borderColor: colors.backgroundSecondary,
   },
   icon: {
-    width: 15 * rate,
-    height: 15 * rate,
+    width: 13 * rate,
+    height: 13 * rate,
   },
 })

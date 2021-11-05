@@ -11,6 +11,8 @@ import Header from './components/header'
 import Dashboard from './components/dashBoard/index'
 import Button from './components/botton'
 import { icons } from '../../assets/icons/index'
+import TronList from './components/tronList/index'
+import { colors } from '../../assets/styles'
 
 const { width } = Dimensions.get('window')
 const rate = width / 375
@@ -19,24 +21,27 @@ const AssetScreen = () => {
     <BackGroundCom>
       <Header />
       <Line style={{ width }} />
+      <View style={styles.space} />
 
       <Dashboard />
-
+      <View style={styles.space} />
       <View style={{
         flexDirection: 'row',
         alignItems: 'center',
         width: width - 24 * rate,
-        justifyContent: 'space-around',
-        marginVertical: 10,
+        justifyContent: 'space-between',
+        marginVertical: 20,
       }}
       >
         <Button
           title="Send"
           icon={icons.send}
+          tintColor={colors.primary}
         />
         <Button
           title="Receive"
           icon={icons.receive}
+          tintColor={colors.primary}
         />
         <Button
           title="Swap"
@@ -52,6 +57,7 @@ const AssetScreen = () => {
         />
       </View>
       <View>
+        <TronList />
         {/* <Button title="Assets" />
         <Button title="Collectibles" /> */}
       </View>
@@ -67,5 +73,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
+  },
+  space: {
+    height: 10,
   },
 })

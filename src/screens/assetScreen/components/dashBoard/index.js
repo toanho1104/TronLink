@@ -106,7 +106,11 @@ const ProCessDashBoard = ({ title }) => {
           </TextCom>
         </View>
         <View>
-          <TextCom>0/0</TextCom>
+          <TextCom
+            textOnPrimary
+          >
+            0/0
+          </TextCom>
         </View>
       </View>
       <ProCessCom />

@@ -29,6 +29,7 @@ const Header = () => {
         </View>
         <TextCom
           textSecondary
+          contenTextRegular
         >
           MainClain
         </TextCom>
@@ -50,6 +51,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12 * rate,
     flexDirection: 'row',
     justifyContent: 'center',
+    paddingVertical: 2 * rate,
+
   },
   maintext: {
     flex: 1,
