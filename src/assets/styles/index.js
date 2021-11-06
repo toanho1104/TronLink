@@ -169,10 +169,10 @@ export const Shadows = {
     shadowColor: colors.backgroundSecondary,
     shadowOffset: {
       width: 0,
-      height: 0,
+      height: 10,
     },
     shadowOpacity: 0.94,
-    shadowRadius: 20,
+    shadowRadius: 30,
     elevation: 5,
   },
 }
