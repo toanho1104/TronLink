@@ -20,6 +20,8 @@
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.9.0",
     "react-native-status-bar-height": "^2.6.0",
+    "react-native-swiper": "^1.6.0-rc.3",
+    "react-native-swiper-flatlist": "^3.0.15",
     "react-redux": "^7.2.6",
     "reactotron-react-native": "^5.0.0"
   },

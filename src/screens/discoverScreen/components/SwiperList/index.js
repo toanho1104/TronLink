@@ -5,33 +5,31 @@ import {
 import FastImage from 'react-native-fast-image'
 import Reactotron from 'reactotron-react-native'
 import { useDispatch, useSelector } from 'react-redux'
-import { getStatusBarHeight } from 'react-native-status-bar-height'
-import Header from './components/header/index'
-import BackGroundCom from '../../components/backGroundCom'
-import SwiperList from './components/SwiperList'
+import Swiper from 'react-native-swiper'
+import { SwiperCom } from '../../../../components'
+import { images } from '../../../../assets/images/index'
 
 const { width } = Dimensions.get('window')
 const rate = width / 375
-const DiscoverScreen = () => {
+const SwiperList = () => {
   return (
-    <View style={styles.container}>
-      <View style={{ height: getStatusBarHeight() }} />
-      <Header />
-      <View style={styles.space} />
-      <SwiperList />
-      <Text>DiscoverScreen</Text>
+    <View>
+      <SwiperCom data={data} />
     </View>
   )
 }
 
-export default DiscoverScreen
+export default SwiperList
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
   },
-  space: {
-    height: 20 * rate,
-  },
 })
+
+const data = [
+  { image: images.p1 },
+  { image: images.p2 },
+  { image: images.p3 },
+]

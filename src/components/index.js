@@ -3,6 +3,7 @@ import TextCom from './textCom'
 import IconCom from './iconCom'
 import Line from './line'
 import ProCessCom from './proCessCom'
+import SwiperCom from './swiperCom'
 
 export {
   BackGroundCom,
@@ -10,4 +11,5 @@ export {
   IconCom,
   Line,
   ProCessCom,
+  SwiperCom,
 }
