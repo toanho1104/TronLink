@@ -30,4 +30,5 @@ export const icons = {
   notification: require('./notification.png'),
   exchange: require('./exchange.png'),
   dropDown: require('./dropDown.png'),
+  search: require('./search.png'),
 }

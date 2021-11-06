@@ -5,14 +5,19 @@ import {
 import FastImage from 'react-native-fast-image'
 import Reactotron from 'reactotron-react-native'
 import { useDispatch, useSelector } from 'react-redux'
+import { getStatusBarHeight } from 'react-native-status-bar-height'
+import Header from './components/header/index'
+import BackGroundCom from '../../components/backGroundCom'
 
 const { width } = Dimensions.get('window')
 const rate = width / 375
 const DiscoverScreen = () => {
   return (
-    <View>
+    <BackGroundCom>
+      <View style={{ height: getStatusBarHeight() }} />
+      <Header />
       <Text>DiscoverScreen</Text>
-    </View>
+    </BackGroundCom>
   )
 }
 
