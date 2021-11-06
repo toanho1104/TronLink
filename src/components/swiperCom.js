@@ -9,7 +9,7 @@ import { colors } from '../assets/styles/index'
 const { width } = Dimensions.get('window')
 const rate = width / 375
 const Swiper = ({ data }) => {
-  console.log(data)
+  // console.log(data)
   return (
     <View style={styles.container}>
       <SwiperFlatList

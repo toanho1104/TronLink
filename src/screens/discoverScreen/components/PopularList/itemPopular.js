@@ -38,8 +38,10 @@ const styles = StyleSheet.create({
     marginBottom: 12 * rate,
     alignItems: 'center',
     borderRadius: 12,
-    backgroundColor: colors.backgroundSecondary,
+    // backgroundColor: colors.backgroundSecondary,
+    borderWidth: 2 * StyleSheet.hairlineWidth,
     paddingVertical: 9,
+    borderColor: colors.backgroundSecondary,
   },
   image: {
     width: 45 * rate,
