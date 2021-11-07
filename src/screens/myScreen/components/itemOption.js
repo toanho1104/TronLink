@@ -11,9 +11,12 @@ import { colors } from '../../../assets/styles'
 
 const { width } = Dimensions.get('window')
 const rate = width / 375
-const ItemOption = ({ title, icon }) => {
+const ItemOption = ({ title, icon, onPress }) => {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity
+      onPress={onPress}
+      style={styles.container}
+    >
       <View style={styles.headerLeft}>
         <IconCom
           source={icon}
@@ -30,7 +33,7 @@ const ItemOption = ({ title, icon }) => {
         style={styles.iconRight}
         tintColor={colors.backgroundSecondary}
       />
-    </View>
+    </TouchableOpacity>
   )
 }
 

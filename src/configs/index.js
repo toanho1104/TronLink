@@ -7,6 +7,7 @@ export const screenName = {
   MarketScreen: 'MarketScreen',
   DiscoverScreen: 'DiscoverScreen',
   MyScreen: 'MyScreen',
+  AboutUsScreen: 'AboutUsScreen',
 }
 
 export const bottom_tab_data = [

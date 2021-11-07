@@ -12,10 +12,16 @@ import { BackGroundCom, Line } from '../../components'
 import Header from './components/header'
 import ItemOption from './components/itemOption'
 import { icons } from '../../assets/icons/index'
+import { NavigationHelpers } from '../../utils'
+import { screenName } from '../../configs/index'
 
 const { width } = Dimensions.get('window')
 const rate = width / 375
 const MyScreen = () => {
+  const handleToAboutUsScreen = () => {
+    NavigationHelpers.navigateToScreen(screenName.AboutUsScreen)
+  }
+
   return (
     <BackGroundCom>
       <LinearGradient
@@ -75,6 +81,7 @@ const MyScreen = () => {
             icon={icons.help}
           />
           <ItemOption
+            onPress={handleToAboutUsScreen}
             title="About Us"
             icon={icons.infor}
           />
