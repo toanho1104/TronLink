@@ -31,4 +31,5 @@ export const icons = {
   exchange: require('./exchange.png'),
   dropDown: require('./dropDown.png'),
   search: require('./search.png'),
+  back: require('./back.png'),
 }

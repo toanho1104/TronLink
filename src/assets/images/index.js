@@ -10,4 +10,5 @@ export const images = {
   logo4: require('./logo4.jpg'),
   logo5: require('./logo5.jpg'),
   logo6: require('./logo6.png'),
+  tronLink: require('./tronLink.jpg'),
 }
