@@ -9,6 +9,7 @@ export const screenName = {
   MyScreen: 'MyScreen',
   AboutUsScreen: 'AboutUsScreen',
   VoteScreen: 'VoteScreen',
+  HistoryScreen: 'HistoryScreen',
 }
 
 export const bottom_tab_data = [
@@ -98,4 +99,49 @@ export const data_products = [
     content: 'If you need some help installing Ubuntu, please check out our step-by-step guides.',
 
   },
+]
+export const vote_data = [
+  {
+    id: 1,
+    name: 'JD Investment',
+    price: 5266814,
+    rate: 5.58,
+  },
+  {
+    id: 2,
+    name: 'Poloniex',
+    price: 6814,
+    rate: 10.58,
+  },
+  {
+    id: 3,
+    name: 'JD kaper',
+    price: 266814,
+    rate: 1.58,
+  },
+  {
+    id: 4,
+    name: 'Kas',
+    price: 899514,
+    rate: 6.58,
+  },
+  {
+    id: 5,
+    name: 'Pumma',
+    price: 5266814,
+    rate: 5.58,
+  },
+  {
+    id: 6,
+    name: 'Yamato',
+    price: 52614,
+    rate: 1.58,
+  },
+  {
+    id: 7,
+    name: 'Kuruma',
+    price: 566814,
+    rate: 10.58,
+  },
+
 ]

@@ -4,6 +4,7 @@ import DiscoverScreen from './discoverScreen'
 import MyScreen from './myScreen'
 import AboutUsScreen from './aboutUsScreen'
 import VoteScreen from './voteScreen'
+import HistoryScreen from './historyScreen'
 
 export {
   AssetScreen,
@@ -12,4 +13,5 @@ export {
   MyScreen,
   AboutUsScreen,
   VoteScreen,
+  HistoryScreen,
 }

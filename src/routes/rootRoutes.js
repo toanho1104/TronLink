@@ -5,7 +5,7 @@ import {
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import {
-  AboutUsScreen, AssetScreen, MarketScreen, VoteScreen,
+  AboutUsScreen, AssetScreen, HistoryScreen, MarketScreen, VoteScreen,
 } from '../screens'
 import BottomTabBarRoute from './bottomTab/bootomTabBarRoutes'
 import { screenName } from '../configs'
@@ -22,6 +22,7 @@ const RootRoute = () => {
         <Stack.Screen name={screenName.BottomTabBarRoute} component={BottomTabBarRoute} />
         <Stack.Screen name={screenName.AboutUsScreen} component={AboutUsScreen} />
         <Stack.Screen name={screenName.VoteScreen} component={VoteScreen} />
+        <Stack.Screen name={screenName.HistoryScreen} component={HistoryScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )

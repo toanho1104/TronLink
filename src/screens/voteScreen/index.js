@@ -11,6 +11,7 @@ import HeaderCom from '../../components/headerCom'
 import { colors } from '../../assets/styles/index'
 import KeyBarView from './components/keyBarView'
 import DashBoardView from './components/dashboard'
+import ListVote from './components/listVote'
 
 const { width } = Dimensions.get('window')
 const rate = width / 375
@@ -44,7 +45,9 @@ const VoteScreen = () => {
           <KeyBarView />
         </LinearGradient>
         <DashBoardView />
-        <Text style={{ marginTop: 300 }}>vote</Text>
+        <View style={styles.listVote}>
+          <ListVote />
+        </View>
       </ScrollView>
     </View>
   )
@@ -57,5 +60,8 @@ const styles = StyleSheet.create({
   },
   scrollView: {
     // borderWidth: 1,
+  },
+  listVote: {
+    marginTop: 110 * rate,
   },
 })

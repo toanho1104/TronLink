@@ -12,14 +12,19 @@ import SwiperList from './components/SwiperList'
 import PopularList from './components/PopularList'
 import GameList from './components/gameList/index'
 import OrderList from './components/orderList'
+import { NavigationHelpers } from '../../utils'
+import { screenName } from '../../configs'
 
 const { width } = Dimensions.get('window')
 const rate = width / 375
 const DiscoverScreen = () => {
+  const handleToHistoryScreen = () => {
+    NavigationHelpers.navigateToScreen(screenName.HistoryScreen)
+  }
   return (
     <View style={styles.container}>
       <View style={{ height: getStatusBarHeight() }} />
-      <Header />
+      <Header onPress={handleToHistoryScreen} />
       <ScrollView
         showsVerticalScrollIndicator={false}
         style={{ marginTop: 10 }}

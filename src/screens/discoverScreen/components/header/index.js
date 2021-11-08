@@ -12,7 +12,7 @@ import { icons } from '../../../../assets/icons/index'
 
 const { width } = Dimensions.get('window')
 const rate = width / 375
-const Header = () => {
+const Header = ({ onPress }) => {
   return (
     <View style={styles.container}>
       <TextCom
@@ -22,7 +22,9 @@ const Header = () => {
         DApp
       </TextCom>
       <SearchFeild />
-      <IconCom source={icons.history} style={styles.icon} />
+      <TouchableOpacity onPress={onPress}>
+        <IconCom source={icons.history} style={styles.icon} />
+      </TouchableOpacity>
     </View>
   )
 }
