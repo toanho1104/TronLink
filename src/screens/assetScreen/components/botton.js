@@ -12,9 +12,14 @@ import TextCom from '../../../components/textCom'
 
 const { width } = Dimensions.get('window')
 const rate = width / 375
-const Button = ({ icon, title, tintColor }) => {
+const Button = ({
+  icon, title, tintColor, onPress,
+}) => {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity
+      onPress={onPress}
+      style={styles.container}
+    >
       <IconCom
         source={icon}
         style={[styles.icon]}
@@ -25,7 +30,7 @@ const Button = ({ icon, title, tintColor }) => {
       >
         {title}
       </TextCom>
-    </View>
+    </TouchableOpacity>
   )
 }
 

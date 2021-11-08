@@ -8,6 +8,7 @@ export const screenName = {
   DiscoverScreen: 'DiscoverScreen',
   MyScreen: 'MyScreen',
   AboutUsScreen: 'AboutUsScreen',
+  VoteScreen: 'VoteScreen',
 }
 
 export const bottom_tab_data = [

@@ -15,10 +15,16 @@ import Button from './components/botton'
 import { icons } from '../../assets/icons/index'
 import TronList from './components/tronList/index'
 import { colors } from '../../assets/styles'
+import { NavigationHelpers } from '../../utils'
+import { screenName } from '../../configs'
 
 const { width } = Dimensions.get('window')
 const rate = width / 375
 const AssetScreen = () => {
+  const handleToVoteScreen = () => {
+    NavigationHelpers.navigateToScreen(screenName.VoteScreen)
+  }
+
   return (
     <BackGroundCom>
       <View style={{ height: getStatusBarHeight() }} />
@@ -55,6 +61,7 @@ const AssetScreen = () => {
           icon={icons.freeze}
         />
         <Button
+          onPress={handleToVoteScreen}
           title="Vote"
           icon={icons.vote}
         />

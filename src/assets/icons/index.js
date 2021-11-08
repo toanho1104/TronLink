@@ -32,4 +32,5 @@ export const icons = {
   dropDown: require('./dropDown.png'),
   search: require('./search.png'),
   back: require('./back.png'),
+  point: require('./point.png'),
 }
